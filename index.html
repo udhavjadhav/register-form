@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="img-container">
+        <img src="assets/Nerd-amico.png" alt="" />
+      </div>
+      <div class="container">
+        <h1>Create Account</h1>
+        <button id="google-signup">
+          Sign up with Google
+          <img class="icon" src="assets/google.png" alt="" />
+        </button>
+        <p>or</p>
+        <form id="registration-form">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" required />
+          </div>
+
+          <div class="button-container" onclick="submit()">
+            <button class="button" type="submit">Create Account</button>
+          </div>
+        </form>
+        <p>
+          Already have an account?
+          <a href="#">Log in</a>
+        </p>
+        <div class="wrapper">
+          <a href="#" class="icon facebook">
+            <div class="tooltip">Facebook</div>
+            <span><i class="fab fa-facebook-f"></i></span>
+          </a>
+          <a href="#" class="icon twitter">
+            <div class="tooltip">Twitter</div>
+            <span><i class="fab fa-twitter"></i></span>
+          </a>
+          <a href="#" class="icon instagram">
+            <div class="tooltip">Instagram</div>
+            <span><i class="fab fa-instagram"></i></span>
+          </a>
+          <a href="#" class="icon github">
+            <div class="tooltip">Github</div>
+            <span><i class="fab fa-github"></i></span>
+          </a>
+          <a href="#" class="icon youtube">
+            <div class="tooltip">Youtube</div>
+            <span><i class="fab fa-youtube"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
